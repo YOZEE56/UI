@@ -1,2 +1,7 @@
--- สมมติว่าในไฟล์ของคุณส่งค่ากลับมาเป็น cascade
-_G.Cascade = cascade
+-- ครอบฟังก์ชันหลักของ Cascade UI (โค้ดดั้งเดิมของคุณทั้งหมด)
+local CascadeLibrary = (function(...) 
+    -- ... ซอร์สโค้ดในไฟล์ dist-unminified ทั้งหมดของคุณ ...
+end)(...)
+
+-- บรรทัดสุดท้ายให้ส่งค่าไปที่ _G โดยใช้ชื่อตัวแปรใหม่
+_G.Cascade = CascadeLibrary
